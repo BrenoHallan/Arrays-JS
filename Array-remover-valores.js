@@ -1,15 +1,8 @@
-//declare a const com uma lista de valores
-const valores = [1,2,3]
+// arrays declaradas em uma constante podem sofrer modificaçoes, mesmo que seja uma constante.
 
-valores.pop()
-// remova valores no final da lista com ".pop()"
+const ArrayX = [1,2,3]
 
-const media = (valores[0] + valores[1]) / valores.length
-console.log(media)
+ArrayX.pop()
 
-
-const arrayVazio = [];
-const arrayNaoVazio = [1, 2, 3];
-
-console.log(Boolean(arrayVazio)); // Saída: true - Mesmo sendo um array vazio, é "truthy"
-console.log(Boolean(arrayNaoVazio)); // Saída: true - Um array com elementos também é "truthy"
+console.log(ArrayX)
+// saida: [1,2]
